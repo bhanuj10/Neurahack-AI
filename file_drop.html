@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body{
+            background-color:antiquewhite;
+        }
+        .container{
+            display: flex;
+        }
+        .card{
+            margin-top: 10%;
+        }
+
+        .card-center {
+            justify-content: center;
+            align-items: center;
+
+        }
+        .side{
+            padding-top:10%;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <a class="navbar-brand" href="#">File Upload</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white" href="#">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+<div class="container">
+    <div class="row">
+        <div class="col-lg">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Future Use</h5>
+                    <p class="card-text">This section is reserved for future use.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg">
+            <div class="card card-center">
+                <div class="card-body">
+                    <h5 class="card-title">Drop Your Files</h5>
+                    <form action="#" method="post" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="fileUpload">Upload your file (CSV, XLSX, XLS):</label>
+                            <input type="file" class="form-control-file" id="fileUpload" name="fileUpload" accept=".csv, .xlsx, .xls" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Description</h5>
+                    <p class="card-text">Please upload your files in CSV, XLSX, or XLS format. This system will process and store the files for further use.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -32,7 +32,7 @@ body {
 }
 
 .container.d-flex {
-    height: 100vh;
+    padding-top: 10%;
 }
 
 .container.d-flex .row {

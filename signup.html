@@ -41,29 +41,49 @@
             </div>
         </div>
     </nav>
+    
     <div class="container">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title text-center">Sign In</h5>
+                <h5 class="card-title text-center">Sign Up</h5>
                 <form>
+                    <div class="mb-3">
+                        <label for="inputName" class="form-label">Name</label>
+                        <input type="text" class="form-control" id="inputName" required>
+                    </div>
                     <div class="mb-3">
                         <label for="inputEmail" class="form-label">Email address</label>
                         <input type="email" class="form-control" id="inputEmail" required>
                     </div>
                     <div class="mb-3">
-                        <label for="inputPassword" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="inputPassword" required>
+                        <label for="inputPhone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="inputPhone" required>
                     </div>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="rememberMe">
-                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                    <!--
+                    <div class="mb-3">
+                        <label for="inputCaptcha" class="form-label">Captcha</label>
+                        <input type="text" class="form-control" id="inputCaptcha" required>
                     </div>
-                    <button type="submit" class="btn btn-primary w-100 ">Sign In</button>
+                -->
+                    <div class="mb-3">
+                        <label for="inputGender" class="form-label">Gender</label>
+                        <select class="form-select" id="inputGender" required>
+                            <option selected disabled value="">Choose...</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputCompany" class="form-label">Company/Organization Name</label>
+                        <input type="text" class="form-control" id="inputCompany" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="inputEmployees" class="form-label">Number of Employees</label>
+                        <input type="number" class="form-control" id="inputEmployees" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Sign Up</button>
                 </form>
-                <div class="signup">
-                    Not having an Account? <a href="#">Signup</a>
-                </div>
-                
             </div>
         </div>
     </div>

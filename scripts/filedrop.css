@@ -17,13 +17,21 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
 /*----------navbar css ends-----------*/
-
-.card {
-    max-width: 400px;
-    margin: auto;
-    margin-top: 100px;
+body{
+    background-color:antiquewhite;
+}
+.container{
+    display: flex;
+}
+.card{
+    margin-top: 10%;
 }
 
-.signup{
-    padding-top: 8px;
+.card-center {
+    justify-content: center;
+    align-items: center;
+
+}
+.side{
+    padding-top:10%;
 }

@@ -17,30 +17,17 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
 /*----------navbar css ends-----------*/
-body{
-    background-color:antiquewhite;
-}
-.container{
-    display: flex;
-}
-.card{
-    margin-top: 10%;
-}
 
-.card-center {
-    justify-content: center;
-    align-items: center;
 
+.profile-card {
+    text-align: center;
 }
-.side{
-    padding-top:10%;
+.profile-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 }
-
-.card-center {
-    margin: 20px 0;
-}
-.vertical-center {
-    
-    display: flex;
-    align-items: center;
+.card-title {
+    margin-top: 10px;
 }

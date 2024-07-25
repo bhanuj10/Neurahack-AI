@@ -1,0 +1,24 @@
+/*----------navbar css starts-----------*/
+.nav-link {
+    font-size: 17px;
+}
+
+.nav-item {
+    padding: 0px 10px;
+}
+
+.navbar {
+    padding-top: 10px;
+}
+
+.navbar-brand {
+    margin-right: 40px;
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*----------navbar css ends-----------*/
+
+.description {
+    display: none;
+    margin-top: 10px;
+}

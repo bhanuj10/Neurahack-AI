@@ -32,37 +32,51 @@
             </div>
         </div>
     </nav>
-    <div class="container d-flex align-items-center justify-content-center min-vh-100">
-        <div class="card w-50">
-            <div class="card-body">
-                <h5 class="card-title">What algorithm your dataset to be trained on?</h5>
-                <form>
-                    <div class="form-check" onmouseover="showDescription('Description for option 1')" onmouseout="hideDescription()">
-                        <input class="form-check-input" type="checkbox" id="option1">
-                        <label class="form-check-label" for="option1">
-                            Option 1
-                        </label>
-                    </div>
-                    <div class="form-check" onmouseover="showDescription('Description for option 2')" onmouseout="hideDescription()">
-                        <input class="form-check-input" type="checkbox" id="option2">
-                        <label class="form-check-label" for="option2">
-                            Option 2
-                        </label>
-                    </div>
-                    <div class="form-check" onmouseover="showDescription('Description for option 3')" onmouseout="hideDescription()">
-                        <input class="form-check-input" type="checkbox" id="option3">
-                        <label class="form-check-label" for="option3">
-                            Option 3
-                        </label>
-                    </div>
-                    <div class="mt-3">
-                        <button type="submit" class="btn btn-primary w-100">Submit</button>
-                    </div>
-                </form>
-                <div class="description mt-3" id="description"></div>
+
+    <div class="container d-flex align-items-center justify-content-center col-lg-6 mb-2 " style="align-items: center;padding: 50px;">
+        <div class="card row" style="align-items: center;">
+            <div class="">
+                <div class="card-body">
+                    <h5 class="card-title">What algorithm your dataset to be trained on?</h5>
+                    <form>
+                        <div class="form-check" onmouseover="showDescription('Description for option 1')" onmouseout="hideDescription()">
+                            <input class="form-check-input" type="checkbox" id="option1">
+                            <label class="form-check-label" for="option1">
+                                Option 1
+                            </label>
+                        </div>
+                        <div class="form-check" onmouseover="showDescription('Description for option 2')" onmouseout="hideDescription()">
+                            <input class="form-check-input" type="checkbox" id="option2">
+                            <label class="form-check-label" for="option2">
+                                Option 2
+                            </label>
+                        </div>
+                        <div class="form-check" onmouseover="showDescription('Description for option 3')" onmouseout="hideDescription()">
+                            <input class="form-check-input" type="checkbox" id="option3">
+                            <label class="form-check-label" for="option3">
+                                Option 3
+                            </label>
+                        </div>
+                        <div class="mt-3">
+                            <button type="submit" class="btn btn-primary w-100">Submit</button>
+                        </div>
+                    </form>
+                    
+                </div>
             </div>
+
+            <div class="">
+                <div class="card " style="display: block;margin-bottom: 10px">
+                    <div class="card-body">
+                        <div class="description mt-3" id="description"></div>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
+
+    
     <script>
         function showDescription(text) {
             document.getElementById('description').innerText = text;

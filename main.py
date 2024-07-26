@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, redirect, url_for
 app = Flask(__name__)
 
 # Dummy user data
-users = {"user@example.com": "password"}
+users = {"bhanuj@aimavericks.com": "password"}
 
 @app.route('/')
 def home():

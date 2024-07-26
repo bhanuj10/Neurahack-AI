@@ -60,3 +60,11 @@ body.dark-mode .card {
 body.dark-mode footer {
     background-color: #212529;
 }
+
+
+/* --------------------------------------*/
+
+.card{
+    
+    max-width: 480px;
+}

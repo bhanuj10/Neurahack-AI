@@ -1,7 +1,11 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request, redirect, url_for, jsonify
+import os
+import time
+from threading import Thread
+from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
-
+app.config['UPLOAD_FOLDER'] = 'uploads'
 # Dummy user data
 users = {"bhanuj@aimavericks.com": "password"}
 
@@ -43,16 +47,29 @@ def signup():############    need some adjust accordingly
 
 @app.route('/file_drop', methods=['GET', 'POST'])
 def file_drop():
+    for i in os.listdir('uploads'):
+        os.remove('uploads/'+i)
     if request.method == 'POST':
         # Handle file drop here
         file = request.files['file']
         # Save the file or process it
+    
+        filename = secure_filename(file.filename)
+        filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+        file.save(filepath)
+        
         return redirect(url_for('file_drop_result'))
     return render_template('file_drop.html')
 
-@app.route('/file_drop_result',methods=['POST'])
+@app.route('/file_drop_result',methods=['GET','POST'])
 def file_drop_result():
+    if request.method =='POST':
+        return render_template('file_drop_result.html')    
     return render_template('file_drop_result.html')
 
 if __name__ == '__main__':
+    if not os.path.exists(app.config['UPLOAD_FOLDER']):
+        os.makedirs(app.config['UPLOAD_FOLDER'])
+    if not os.path.exists('static/results'):
+        os.makedirs('static/results')
     app.run(debug=False)

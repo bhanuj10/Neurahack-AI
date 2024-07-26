@@ -18,9 +18,7 @@
 }
 /*----------navbar css ends-----------*/
 
-body {
-    background-color: antiquewhite;
-}
+
 
 .card {
     margin-top: 20px;
@@ -42,3 +40,35 @@ body {
 .card-center {
     margin: 20px 0;
 }
+
+/* Light mode (default) */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.navbar-dark {
+    background-color: #6c757d;
+}
+
+.card {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .navbar-dark {
+    background-color: #343a40;
+}
+
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+}
+
+/*///////////////////////*/

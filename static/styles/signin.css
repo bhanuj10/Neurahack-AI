@@ -27,3 +27,59 @@
 .signup{
     padding-top: 8px;
 }
+
+
+/* Light mode (default) */
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.navbar-dark {
+    background-color: #6c757d;
+}
+
+.card {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #ddd;
+}
+
+.card-title {
+    color: #000000;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .navbar-dark {
+    background-color: #343a40;
+}
+
+body.dark-mode .card {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    border: 1px solid #444;
+}
+
+body.dark-mode .card-title {
+    color: #e0e0e0;
+}
+
+body.dark-mode .btn-primary {
+    background-color: #375a7f;
+    border-color: #375a7f;
+}
+
+body.dark-mode .btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+}

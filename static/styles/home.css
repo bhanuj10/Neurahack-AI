@@ -17,3 +17,44 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
 /*----------navbar css ends-----------*/
+
+
+/*theme---start*/
+/* Light mode styles (default) */
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.navbar {
+    background-color: #6c757d;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+body.dark-mode .navbar {
+    background-color: #495057;
+}
+
+body.dark-mode .hero {
+    background-color: #212529;
+}
+
+body.dark-mode .section-content {
+    background-color: #495057;
+}
+
+body.dark-mode .flowchart img {
+    filter: brightness(1);
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/*theme---end*/
+

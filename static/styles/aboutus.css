@@ -31,3 +31,41 @@
 .card-title {
     margin-top: 10px;
 }
+
+/*theme*/
+
+/* Light mode styles (default) */
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.navbar {
+    background-color: #6c757d;
+}
+
+.card {
+    background-color: #ffffff;
+    color: #212529;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+body.dark-mode .navbar {
+    background-color: #495057;
+}
+
+body.dark-mode .card {
+    background-color: #495057;
+    color: #f8f9fa;
+}
+
+body.dark-mode .profile-card img {
+    border: 2px solid #f8f9fa; /* Light border for profile images in dark mode */
+}
+
+/*--theme--*/

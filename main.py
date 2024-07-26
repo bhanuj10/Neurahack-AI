@@ -3,6 +3,7 @@ import os
 import time
 from threading import Thread
 from werkzeug.utils import secure_filename
+from ai_modules import *
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploads'
@@ -64,8 +65,15 @@ def file_drop():
 @app.route('/file_drop_result',methods=['GET','POST'])
 def file_drop_result():
     if request.method =='POST':
-        return render_template('file_drop_result.html')    
-    return render_template('file_drop_result.html')
+        options = request.form.getlist('options')
+            # Process the file with the selected options
+        results = []
+        for option in options:
+            #result = ai_modules.process_file(file_path, option)
+            result = []
+            results.append(result)
+        return render_template('file_drop_result.html', results=results, has_results=True)
+    return render_template('file_drop_result.html',has_results=False)
 
 if __name__ == '__main__':
     if not os.path.exists(app.config['UPLOAD_FOLDER']):

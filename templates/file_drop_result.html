@@ -39,22 +39,28 @@
                 <div class="card-body">
                     <h5 class="card-title">What algorithm your dataset to be trained on?</h5>
                     <form action="/file_drop_result" method="POST">
-                        <div class="form-check" onmouseover="showDescription('Description for option 1')" onmouseout="hideDescription()">
+                        <div class="form-check" onmouseover="showDescription('This feature will predict the price of the products...')" onmouseout="hideDescription()">
                             <input class="form-check-input" type="checkbox" id="option1" name="options" value="option1">
                             <label class="form-check-label" for="option1">
-                                Option 1
+                                Price Prediction
                             </label>
                         </div>
-                        <div class="form-check" onmouseover="showDescription('Description for option 2')" onmouseout="hideDescription()">
+                        <div class="form-check" onmouseover="showDescription('This feature will predict the upcoming sales of the products...')" onmouseout="hideDescription()">
                             <input class="form-check-input" type="checkbox" id="option2" name="options" value="option2">
                             <label class="form-check-label" for="option2">
-                                Option 2
+                                Sales Forecasting
                             </label>
                         </div>
-                        <div class="form-check" onmouseover="showDescription('Description for option 3')" onmouseout="hideDescription()">
+                        <div class="form-check" onmouseover="showDescription('This feature will help you analyze customer behaviour and segrete customer into different categories')" onmouseout="hideDescription()">
                             <input class="form-check-input" type="checkbox" id="option3" name="options" value="option3">
                             <label class="form-check-label" for="option3">
-                                Option 3
+                                Customer Segmentation
+                            </label>
+                        </div>
+                        <div class="form-check" onmouseover="showDescription('This feature will detection the occurence of future anomaly...')" onmouseout="hideDescription()">
+                            <input class="form-check-input" type="checkbox" id="option4" name="options" value="option4">
+                            <label class="form-check-label" for="option3">
+                                Anomaly Detection
                             </label>
                         </div>
                         <div class="mt-3">

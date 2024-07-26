@@ -33,7 +33,7 @@ def signin():
     return render_template('signin.html')
 
 @app.route('/signup', methods=['GET', 'POST'])
-def signup():
+def signup():############    need some adjust accordingly
     if request.method == 'POST':
         email = request.form['email']
         password = request.form['password']
@@ -50,9 +50,9 @@ def file_drop():
         return redirect(url_for('file_drop_result'))
     return render_template('file_drop.html')
 
-@app.route('/file_drop_result')
+@app.route('/file_drop_result',methods=['POST'])
 def file_drop_result():
     return render_template('file_drop_result.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
